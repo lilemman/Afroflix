@@ -1,0 +1,71 @@
+@use "../../styles/partials/variables" as *;
+.featured {
+  height: 90vh;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__info {
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin: 20px 0px;
+    }
+  }
+  &__description {
+    margin: 20px 0px;
+  }
+  &__buttons {
+    display: flex;
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      justify-content: center;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    &--play {
+      background-color: white;
+      color: $Main-Color;
+    }
+    &--more {
+      background-color: grey;
+      color: white;
+    }
+    span{
+        margin-left: 15px;
+    }
+  }
+  &__category{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    select{
+        cursor: pointer;
+        background-color: $Main-Color;
+        border: 1px solid white;
+        color: white;
+        margin-left: 20px;
+        padding: 5px;
+    }
+  }
+}

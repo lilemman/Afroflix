@@ -1,0 +1,84 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../../assets/images/back.png");
+  background-repeat: no-repeat;
+  //background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+
+  &__wrapper {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+  }
+  &__login {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    font-weight: 500;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    //left: 0;
+
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      margin: 20px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__input{
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 20px;
+  }
+  &__email{
+   padding: 10px;
+   outline-width: 0;
+   height: 50px;
+   width: 300px;
+   //max-width: 600px;
+   border: none;
+
+  }
+  &__button{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+
+  }
+}

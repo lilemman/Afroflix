@@ -1,0 +1,72 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+.navbar {
+  color: white;
+  font-size: 14px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  &__container {
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    @include tablet {
+      padding: 0px 50px;
+    }
+  }
+  &__logo--container {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 10px;
+      cursor: pointer;
+      @include tablet {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__img {
+    height: 45px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+  &__icons {
+    margin: 0px 5px;
+    cursor: pointer;
+    @include tablet {
+      margin: 0px 15px;
+    }
+  }
+  //Show to TA for assistance
+  &__options {
+    display: none;
+    // flex-direction: column;
+    // margin-left: 0.5rem;
+    background-color: $Main-Color;
+    border-radius: 5px;
+    color: white;
+    &:hover {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+    }
+    &--span {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
